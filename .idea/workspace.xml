@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="main page &amp;&amp; popup" />
+    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="pages: blog, article, our team, careers, contact us, 404">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,15 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/artem/Desktop/clean-sweep",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artem/Desktop/clean-sweep&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +52,9 @@
       <option name="presentableId" value="Default" />
       <updated>1683507055105</updated>
       <workItem from="1683507056246" duration="259000" />
+      <workItem from="1683513576240" duration="1976000" />
+      <workItem from="1683602695797" duration="98000" />
+      <workItem from="1683768926748" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="main page &amp;&amp; popup">
       <created>1683507254197</created>
@@ -50,14 +63,64 @@
       <option name="project" value="LOCAL" />
       <updated>1683507254197</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="page about us">
+      <created>1683513676597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683513676597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: page about us">
+      <created>1683514275619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683514275619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: page about us">
+      <created>1683529940018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683529940018</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pages: our differences, services, service, price plans, faq">
+      <created>1683602747100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683602747100</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pages: blog, article, our team, careers, contact us, 404">
+      <created>1683771693853</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683771693855</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main page &amp;&amp; popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="main page &amp;&amp; popup" />
+    <MESSAGE value="page about us" />
+    <MESSAGE value="fix: page about us" />
+    <MESSAGE value="pages: our differences, services, service, price plans, faq" />
+    <MESSAGE value="pages: blog, article, our team, careers, contact us, 404" />
+    <option name="LAST_COMMIT_MESSAGE" value="pages: blog, article, our team, careers, contact us, 404" />
   </component>
 </project>
