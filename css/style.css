@@ -4902,6 +4902,10 @@ body.overflow-hidden {
   margin-bottom: 20px;
 }
 
+.faq__item.active .faq__head:before {
+  opacity: 1;
+}
+
 .faq__item.active .faq__title {
   color: #2D92D0;
 }
@@ -4914,6 +4918,7 @@ body.overflow-hidden {
 }
 
 .faq__head {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4925,6 +4930,20 @@ body.overflow-hidden {
           justify-content: space-between;
   padding: 23px 30px;
   cursor: pointer;
+}
+
+.faq__head:before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 13px;
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #EDEDED;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .faq__head:hover .faq__title,
@@ -4965,8 +4984,7 @@ body.overflow-hidden {
 .faq__content {
   display: none;
   margin-top: -14px;
-  padding: 20px 30px 23px;
-  border-top: 1px solid #EDEDED;
+  padding: 22px 30px 22px;
 }
 
 .faq__content picture {
@@ -7323,12 +7341,18 @@ body.overflow-hidden {
     padding: 0 5px;
   }
 
+  .faq__head:before {
+    bottom: 6px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
+
   .faq__head {
     padding: 16px;
   }
 
   .faq__content {
-    margin-top: -7px;
+    margin-top: -5px;
     padding: 20px 16px 16px;
   }
 
@@ -7393,6 +7417,12 @@ body.overflow-hidden {
 
   .careers-page .faq__head {
     padding: 20px;
+  }
+
+  .careers-page .faq__head:before {
+    bottom: 10px;
+    left: 20px;
+    width: calc(100% - 40px);
   }
 
   .careers-page .faq__content {
