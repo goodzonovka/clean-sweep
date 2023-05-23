@@ -4,8 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="page of reviews">
+    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="add h2, change faq accordion">
+      <change afterPath="$PROJECT_DIR$/css/style.min.css.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/app.min.js.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/careers.html" beforeDir="false" afterPath="$PROJECT_DIR$/careers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/stack/sprite.stack.html" beforeDir="false" afterPath="$PROJECT_DIR$/img/stack/sprite.stack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our-differences.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-differences.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our-team.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price-plans.html" beforeDir="false" afterPath="$PROJECT_DIR$/price-plans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/reviews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/text-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/artem/Desktop/react",
+    "last_opened_file_path": "C:/Users/artem/Desktop/work/clean-sweep",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +83,8 @@
       <workItem from="1683801812157" duration="640000" />
       <workItem from="1683904172016" duration="339000" />
       <workItem from="1683925869833" duration="38000" />
+      <workItem from="1684847407279" duration="979000" />
+      <workItem from="1684851698674" duration="501000" />
     </task>
     <task id="LOCAL-00001" summary="main page &amp;&amp; popup">
       <created>1683507254197</created>
@@ -115,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683904265080</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add h2, change faq accordion">
+      <created>1684847533792</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684847533792</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +174,7 @@
     <MESSAGE value="pages: blog, article, our team, careers, contact us, 404" />
     <MESSAGE value="create text page &amp;&amp; fix bugs" />
     <MESSAGE value="page of reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="page of reviews" />
+    <MESSAGE value="add h2, change faq accordion" />
+    <option name="LAST_COMMIT_MESSAGE" value="add h2, change faq accordion" />
   </component>
 </project>
