@@ -150,7 +150,7 @@
             </div>
 
             <!-- BUTTON -->
-            <button class="button" data-fancybox data-src="#popup">Instant quote</button>
+            <button class="button" data-fancybox data-src="#iq-form">Instant quote</button>
 
             <button class="m-menu__btn" aria-label="Menu">
                 <svg width="42" height="42">
@@ -175,7 +175,7 @@
                     frustrated, tired and busy FMs to get the best return on their cleaning budget, long term.
                 </div>
                 <div class="buttons">
-                    <button class="button" data-fancybox data-src="#popup">Instant quote</button>
+                    <button class="button" data-fancybox data-src="#iq-form">Instant quote</button>
                     <button class="button button-transparent" data-fancybox data-src="#popup">book a meeting</button>
                 </div>
             </div>
@@ -558,7 +558,7 @@
 
                 <div class="block">
                     <h2 class="title">Ready to try BVLT System and get an ROI on your cleaning budget? </h2>
-                    <button class="button" data-fancybox data-src="#popup">Instant quote</button>
+                    <button class="button" data-fancybox data-src="#iq-form">Instant quote</button>
                 </div>
             </div>
         </div>
@@ -681,7 +681,7 @@
                         <p>Can a cheaper cleaning contractor actually <strong>guarantee</strong> that?</p>
                         <p>Yeah, not very likely.</p>
                     </div>
-                    <button class="button" data-fancybox data-src="#popup">Instant quote</button>
+                    <button class="button" data-fancybox data-src="#iq-form">Instant quote</button>
                 </div>
                 <div class="img"
                      style="background-image: url('img/pages/main-page/about-bvlt-2.webp')"
@@ -780,6 +780,156 @@
         </form>
     </div>
 </div>
+
+    <div id="iq-form">
+        <div class="iq-form">
+            <h1>INSTANT QUOTE</h1>
+            <form class="validate">
+                <p class="iq-form__subtitle">You are one step away from your instant commercial cleaning quote</p>
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_name">Full name</label>
+                    <input type="text" id="iq-form_name" name="iq-form_name" class="form-control"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_company_name">Company name</label>
+                    <input type="text" id="iq-form_company_name" name="iq-form_company_name" class="form-control"
+                        placeholder="Enter company name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_address">Street address</label>
+                    <input type="text" id="iq-form_address" name="iq-form_address" class="form-control"
+                        placeholder="Enter street address" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_postcode">Postcode</label>
+                    <input type="text" id="iq-form_postcode" name="iq-form_postcode" class="form-control"
+                        placeholder="Enter postcode" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_city">City</label>
+                    <input type="text" id="iq-form_city" name="iq-form_city" class="form-control"
+                        placeholder="Enter city" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_email">E-mail address</label>
+                    <input type="email" id="iq-form_email" name="iq-form_email" class="form-control"
+                        placeholder="Enter your e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_phone">Phone number</label>
+                    <input type="tel" id="iq-form_phone" name="iq-form_phone" class="form-control"
+                        placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Ideal clean frequency</div>
+                    <div class="checkbox-group">
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_mon" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_mon">Mon</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_tue" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_tue">Tue</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_wed" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_wed">Wed</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_thu" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_thu">Thu</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_fri" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_fri">Fri</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_sar" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_sar">Sat</label>
+
+                        <input class="checkbox-group__input" type="checkbox" id="iq-form_sun" name="iq-form_days">
+                        <label class="checkbox-group__label" for="iq-form_sun">Sun</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_time">Cleaning time</label>
+                    <input type="hidden" id="iq-form_time" name="iq-form_time" value="2" required data-input-hidden>
+                    <div class="input-group">
+                        <button class="input-group__btn" type="button" aria-label="less" data-input-less>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </button>
+                        <div class="input-group__input"><span data-input-value>2</span>&nbsp;hrs</div>
+                        <button class="input-group__btn" type="button" aria-label="more" data-input-more>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="iq-form_start">Preferred starting time</label>
+                    <select class="form-select" id="iq-form_start" name="iq-form_start" aria-label="Preferred starting time">
+                        <option value="1">1:00 am</option>
+                        <option value="2">2:00 am</option>
+                        <option value="3">3:00 am</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Choose your pack</div>
+                    <div class="checkbox-group checkbox-group_eq">
+                        <input class="checkbox-group__input" type="radio" id="iq-form_standart" name="iq-form_pack" checked>
+                        <label class="checkbox-group__label" for="iq-form_standart">BVLT Standart</label>
+
+                        <input class="checkbox-group__input" type="radio" id="iq-form_pro" name="iq-form_pack">
+                        <label class="checkbox-group__label" for="iq-form_pro">BVLT Pro</label>
+                    </div>
+                </div>
+
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="iq-form_contact">
+                    <label class="form-check-label" for="iq-form_contact">I am happy to be contacted by Clean Sweep about the services they offer</label>
+                </div>
+
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="iq-form_update">
+                    <label class="form-check-label" for="iq-form_update">I am happy to receive cleaning quote information via email</label>
+                </div>
+
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="iq-form_agree">
+                    <label class="form-check-label" for="iq-form_agree">I agree to GDPR messages via e-mail</label>
+                </div>
+
+                <button class="button loading" type="submit" disabled>
+                    Generate Instant Quote
+                    <div class="button__loading">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </button>
+
+            </form>
+
+            <div class="form-success">
+                <div class="form-success__ico">
+                    <svg width="24" height="24">
+                        <use href="./img/icons/icons.svg#check-box"></use>
+                    </svg>
+                </div>
+                <h2>Your request<br>has been accepted!</h2>
+                <p>The preliminary price is <strong>100 per week</strong>, you will receive a full calculation after the object has been assessed by our specialist.</p>
+                <p>
+                    Our representative will contact you after processing the application.<br>
+                    Thank you!
+                </p>
+                <button class="button loading" type="button" data-fancybox-close>Got it</button>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">
