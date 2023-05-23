@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="pages: blog, article, our team, careers, contact us, 404">
+    <list default="true" id="c2b59a74-b18e-4557-9671-309218c0059e" name="Changes" comment="page of reviews">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,20 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/artem/Desktop/clean-sweep&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/artem/Desktop/react",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +55,9 @@
       <workItem from="1683513576240" duration="1976000" />
       <workItem from="1683602695797" duration="98000" />
       <workItem from="1683768926748" duration="1633000" />
+      <workItem from="1683801812157" duration="640000" />
+      <workItem from="1683904172016" duration="339000" />
+      <workItem from="1683925869833" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="main page &amp;&amp; popup">
       <created>1683507254197</created>
@@ -98,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683771693855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="create text page &amp;&amp; fix bugs">
+      <created>1683801859311</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683801859311</updated>
+    </task>
+    <task id="LOCAL-00008" summary="page of reviews">
+      <created>1683904265080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904265080</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +138,8 @@
     <MESSAGE value="fix: page about us" />
     <MESSAGE value="pages: our differences, services, service, price plans, faq" />
     <MESSAGE value="pages: blog, article, our team, careers, contact us, 404" />
-    <option name="LAST_COMMIT_MESSAGE" value="pages: blog, article, our team, careers, contact us, 404" />
+    <MESSAGE value="create text page &amp;&amp; fix bugs" />
+    <MESSAGE value="page of reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="page of reviews" />
   </component>
 </project>

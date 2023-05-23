@@ -4077,6 +4077,8 @@ body.overflow-hidden {
   margin-bottom: 20px;
 }
 
+.page .user-content h2,
+.page .user-content .h2,
 .page .user-content h3,
 .page .user-content .h3,
 .page .user-content h4,
@@ -4088,8 +4090,13 @@ body.overflow-hidden {
   text-transform: initial;
 }
 
-.page .user-content h3 {
+.page .user-content h2 {
   font-size: 20px;
+  font-weight: 700;
+}
+
+.page .user-content h2,
+.page .user-content h3 {
   line-height: 1.3;
 }
 
@@ -4268,10 +4275,11 @@ body.overflow-hidden {
   width: calc(100% - 594px - 60px);
 }
 
-.services .item .user-content h3 {
+.services .item .user-content h2 {
   margin-bottom: 12px;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -4365,7 +4373,7 @@ body.overflow-hidden {
   border-right: 1px solid #EDEDED;
 }
 
-.price-plans .head h3 {
+.price-plans .head h2 {
   font-weight: 800;
 }
 
@@ -4380,7 +4388,7 @@ body.overflow-hidden {
   padding: 30px 30px 27px;
 }
 
-.price-plans .head .column_1 h3 {
+.price-plans .head .column_1 h2 {
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 30px;
@@ -4398,9 +4406,10 @@ body.overflow-hidden {
   padding: 30px 37px 28px;
 }
 
-.price-plans .head .column_2 h3,
-.price-plans .head .column_3 h3,
-.price-plans .head .column_4 h3 {
+.price-plans .head .column_2 h2,
+.price-plans .head .column_3 h2,
+.price-plans .head .column_4 h2 {
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -4425,9 +4434,9 @@ body.overflow-hidden {
   text-align: center;
 }
 
-.price-plans .column_2 .h3,
-.price-plans .column_3 .h3,
-.price-plans .column_4 .h3 {
+.price-plans .column_2 .h2,
+.price-plans .column_3 .h2,
+.price-plans .column_4 .h2 {
   line-height: 24px;
   font-weight: 800;
 }
@@ -4444,7 +4453,7 @@ body.overflow-hidden {
   color: #E92D4F;
 }
 
-.price-plans .column_2 h3 {
+.price-plans .column_2 h2 {
   color: #E92D4F;
 }
 
@@ -4453,8 +4462,8 @@ body.overflow-hidden {
   color: #38B44A;
 }
 
-.price-plans .column_3 h3,
-.price-plans .column_4 h3 {
+.price-plans .column_3 h2,
+.price-plans .column_4 h2 {
   color: #38B44A;
 }
 
@@ -4465,8 +4474,15 @@ body.overflow-hidden {
 .price-plans-section__title {
   padding: 21px 30px 19px;
   font-weight: 700;
+  line-height: 22px;
+  text-transform: initial;
   color: #0F1B24;
   border-bottom: 1px solid #EDEDED;
+}
+
+.price-plans-section__title h3 {
+  line-height: 22px;
+  text-transform: initial;
 }
 
 .price-plans .row {
@@ -4571,7 +4587,6 @@ body.overflow-hidden {
 }
 
 .faq__item {
-  padding: 23px 30px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
           box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
@@ -4580,6 +4595,10 @@ body.overflow-hidden {
 
 .faq__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.faq__item.active .faq__title {
+  color: #2D92D0;
 }
 
 .faq__item.active .faq__toggle svg {
@@ -4599,12 +4618,23 @@ body.overflow-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 23px 30px;
+  cursor: pointer;
+}
+
+.faq__head:hover .faq__title,
+.faq__head:hover .faq__toggle {
+  color: #2D92D0;
 }
 
 .faq__title {
   font-size: 18px;
   line-height: 27px;
   text-transform: initial;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .faq__toggle {
@@ -4627,14 +4657,10 @@ body.overflow-hidden {
   border-radius: 50%;
 }
 
-.faq__toggle:hover {
-  color: #2D92D0;
-}
-
 .faq__content {
   display: none;
-  margin-top: 9px;
-  padding-top: 20px;
+  margin-top: -14px;
+  padding: 20px 30px 23px;
   border-top: 1px solid #EDEDED;
 }
 
@@ -4996,6 +5022,7 @@ body.overflow-hidden {
   margin-bottom: 9px;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .careers-page {
@@ -5880,6 +5907,7 @@ body.overflow-hidden {
     width: calc(50% - 15px);
   }
 
+  .page .user-content h2,
   .page .user-content h3 {
     margin-bottom: 12px;
   }
@@ -6271,7 +6299,7 @@ body.overflow-hidden {
     margin-bottom: 20px;
   }
 
-  .page .user-content h3 {
+  .page .user-content h2 {
     font-size: 18px;
     line-height: 26px;
   }
@@ -6452,57 +6480,6 @@ body.overflow-hidden {
 
   .careers-footer .map .info {
     margin-top: 15px;
-  }
-
-  .careers-page h1 {
-    margin-bottom: 20px;
-  }
-
-  .careers-page .faq__item {
-    padding: 20px;
-  }
-
-  .careers-page .faq__content picture {
-    display: block;
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .careers-page .faq__content.user-content p:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .careers-page .faq__content .button {
-    margin-top: 0 !important;
-  }
-
-  .careers-footer {
-    margin-top: 40px;
-    padding: 40px 0;
-  }
-
-  .careers-footer h2 {
-    width: 282px;
-    margin-bottom: 20px;
-  }
-
-  .careers-footer .inner {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .careers-footer .inner > * {
-    width: 100%;
-  }
-
-  .careers-footer .map {
-    margin-top: 30px;
-  }
-
-  .careers-footer .map .info {
-    margin-top: 24px;
   }
 
   .contact-us {
@@ -6999,9 +6976,9 @@ body.overflow-hidden {
     padding: 12px 12px 11px;
   }
 
-  .price-plans .head .column_2 h3,
-  .price-plans .head .column_3 h3,
-  .price-plans .head .column_4 h3 {
+  .price-plans .head .column_2 h2,
+  .price-plans .head .column_3 h2,
+  .price-plans .head .column_4 h2 {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -7041,8 +7018,13 @@ body.overflow-hidden {
     padding: 0 5px;
   }
 
-  .faq__item {
+  .faq__head {
     padding: 16px;
+  }
+
+  .faq__content {
+    margin-top: -7px;
+    padding: 20px 16px 16px;
   }
 
   .faq__title {
@@ -7098,6 +7080,62 @@ body.overflow-hidden {
         -ms-flex-order: -1;
             order: -1;
     margin-bottom: 20px;
+  }
+
+  .careers-page h1 {
+    margin-bottom: 20px;
+  }
+
+  .careers-page .faq__head {
+    padding: 20px;
+  }
+
+  .careers-page .faq__content {
+    margin-top: -11px;
+    padding: 10px 20px;
+  }
+
+  .careers-page .faq__content picture {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .careers-page .faq__content.user-content p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .careers-page .faq__content .button {
+    margin-top: 0 !important;
+  }
+
+  .careers-footer {
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+
+  .careers-footer h2 {
+    width: 282px;
+    margin-bottom: 20px;
+  }
+
+  .careers-footer .inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .careers-footer .inner > * {
+    width: 100%;
+  }
+
+  .careers-footer .map {
+    margin-top: 30px;
+  }
+
+  .careers-footer .map .info {
+    margin-top: 24px;
   }
 
   .contact-us-page h1 {
