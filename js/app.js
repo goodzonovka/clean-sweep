@@ -13,7 +13,7 @@ isWebp(), $(function() {
     if($(".faq").length && $(".faq__head").click(function() {
         $(this).parent().toggleClass("active"), $(this).next().slideToggle()
     }), $(".price-plans").length && $(window).width() < 1200 && $(".price-plans-section__title").click(function() {
-        $(this).parent().toggleClass("active"), $(this).next().slideToggle()
+        $(this).parent().parent().toggleClass("active"), $(this).parent().parent().find('.price-plans-section__content').slideToggle()
     }), $(".page-our-differences").length && $(window).width() > 767 && $(".bvlt-difference__left li").each(function(e) {
         let t = $(this),
             i = $(this).outerHeight(),
@@ -116,19 +116,55 @@ isWebp(), $(function() {
         }), $(".header-menu__item").on("click", function(e) {
             $(e.target).is("a") || $(this).toggleClass("active").next().slideToggle(300)
         })) : $(window).width() > 1199 && !e && (e = !0, $(".header__logo").after($(".header-menu")), $(".header-menu__item").removeClass("active"), $(".header-menu__submenu").removeAttr("style"), $(".footer__item .title, .header-menu__item").off()), $(window).width() < 768 && !t ? (t = !0, $(".m-menu__footer").append($(".header__contacts"), $(".header .button"))) : $(window).width() > 767 && t && (t = !1, $(".m-menu__btn").before($(".header__contacts"), $(".m-menu__footer .button")))
-    }), $("[data-input-hidden]").length > 0) {
-        let e = $("[data-input-hidden]"),
-            t = $("[data-input-value]");
+    }));
 
-        function i(e) {
-            return e >= 2
+
+    if ($('[data-input-hidden]').length > 0) {
+
+        function checkValue(value) {
+            // minimum value is 2
+            if (value >= 2) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        $(document).on("click", "[data-input-less]", function() {
-            let n = parseInt(e.val()) - 1;
-            1 == i(n) && (e.val(n), t.text(n))
-        }), $(document).on("click", "[data-input-more]", function() {
-            let n = parseInt(e.val()) + 1;
-            1 == i(n) && (e.val(n), t.text(n))
+
+        $(document).on('click', '[data-input-less]', function(){
+            var updatedValue = parseInt($(this).parent().parent().find('[data-input-hidden]').val()) - 1;
+            var dataInputValue = $(this).parent().find('[data-input-value]');
+            if (checkValue(updatedValue) == true) {
+                $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                dataInputValue.text(updatedValue);
+            }
+        });
+
+        $(document).on('click', '[data-input-more]', function(){
+            var updatedValue = parseInt($(this).parent().parent().find('[data-input-hidden]').val()) + 1;
+            var dataInputValue = $(this).parent().find('[data-input-value]');
+            if (checkValue(updatedValue) == true) {
+                $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                dataInputValue.text(updatedValue);
+            }
         })
+    };
+
+
+    $(window).on('scroll', function(){
+        if ($(document).scrollTop() > ($(window).innerHeight() / 2)) {
+            $('[data-to-top]').removeClass('hidden');
+          } else {
+            $('[data-to-top]').addClass('hidden');
+        }
+    });
+
+    $(document).on('click', '[data-to-top]', function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    if ($('[data-pricing-header]').length > 0) {
+        $('[data-pricing-header]').hcSticky({
+            top: $('header').outerHeight()
+        });
     }
 });
