@@ -4716,6 +4716,7 @@ body.overflow-hidden {
   border-bottom: 1px solid #EDEDED;
   background: #fff;
   border-radius: 16px 16px 0 0;
+  z-index: 1;
 }
 
 .price-plans .head > *:not(:last-child) {
@@ -6148,7 +6149,8 @@ body.overflow-hidden {
   }
 
   .footer .content {
-    display: none;
+    /* display: none; */
+    padding-left: 30px;
     padding-bottom: 30px;
   }
 
