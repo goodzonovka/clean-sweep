@@ -3576,8 +3576,8 @@ body.overflow-hidden {
   height: 400px;
   border-radius: 16px;
   background-repeat: no-repeat;
-  background-position: center left -29px;
-  background-size: 899px auto;
+  background-position: center;
+  background-size: cover;
 }
 
 .how-bvlt-can-help {
@@ -3895,8 +3895,6 @@ body.overflow-hidden {
 
 .about-bvlt-2 .img {
   height: 476px;
-  background-size: cover;
-  background-position: left center;
 }
 
 .clients__slider {
@@ -6123,8 +6121,6 @@ body.overflow-hidden {
 
   .about-bvlt .img {
     height: 323px;
-    background-position: center left -22px;
-    background-size: 725px auto;
   }
 
   .about-bvlt .user-content {
@@ -6198,11 +6194,8 @@ body.overflow-hidden {
   }
 
   .about-bvlt-2 .img {
-    overflow: hidden;
     width: calc(50% - 17px);
     height: 476px;
-    background-size: 672px 476px;
-    background-position: -68px center;
   }
 
   .clients__slider-wrap {
@@ -6516,8 +6509,6 @@ body.overflow-hidden {
   }
 
   .about-bvlt .img {
-    background-position: center left -36px;
-    background-size: 583px auto;
     height: 387px;
   }
 
@@ -6583,8 +6574,6 @@ body.overflow-hidden {
         -ms-flex-order: -1;
             order: -1;
     height: 476px;
-    background-size: 732px 528px;
-    background-position: left center;
   }
 
   .about-bvlt-2 .inner .img img {
@@ -6625,10 +6614,6 @@ body.overflow-hidden {
   .page .user-content h2 {
     font-size: 18px;
     line-height: 26px;
-  }
-
-  .page-about-us .block:nth-child(2) .img {
-    background-position: center bottom;
   }
 
   .bvlt-difference .section-title {
@@ -7004,9 +6989,6 @@ body.overflow-hidden {
 
   .about-bvlt .img {
     height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
   }
 
   .about-bvlt .img img {
@@ -7128,12 +7110,6 @@ body.overflow-hidden {
 
   .about-bvlt-2 .inner .img {
     height: 280px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .about-bvlt-2 .inner .img img {
-    width: 100%;
   }
 
   .about-bvlt-2 .inner .content {
@@ -7526,8 +7502,6 @@ body.overflow-hidden {
 
 @media (max-width: 480px) {
   .about-bvlt .img {
-    background-position: center left -16px;
-    background-size: 492px auto;
     height: 240px;
   }
 }
@@ -7563,16 +7537,6 @@ body.overflow-hidden {
 @media (min-width: 768px) and (max-width: 768px) {
   .our-services .tabs-content .list .img {
     height: 220px;
-  }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-  .page-about-us .block:first-child .img {
-    background-position: center -96px;
-  }
-
-  .page-about-us .block:nth-child(3) .img {
-    background-position: center -23px;
   }
 }
 
@@ -7642,12 +7606,6 @@ body.overflow-hidden {
   .blog-item:nth-child(6) {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .page-our-differences .block:nth-child(3) .img {
-    background-position: center -32px;
   }
 }
 
