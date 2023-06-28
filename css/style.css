@@ -5452,8 +5452,15 @@ body.overflow-hidden {
           justify-content: space-between;
 }
 
-.contact-us-page .user-content {
-  margin-bottom: 50px;
+.contact-us-text {
+  -webkit-box-ordinal-group: -3;
+      -ms-flex-order: -4;
+          order: -4;
+  margin-bottom: 30px;
+}
+
+.contact-us-text-2 {
+  margin-left: 30px;
 }
 
 .contact-us .form {
@@ -5464,7 +5471,18 @@ body.overflow-hidden {
   margin-bottom: 30px;
 }
 
+.contact-us .form .wrap-btn-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact-us .form .button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 145px;
   margin-top: -6px;
 }
@@ -6435,10 +6453,6 @@ body.overflow-hidden {
 
   .careers-footer .form {
     padding: 30px;
-  }
-
-  .contact-us-page .user-content {
-    margin-bottom: 30px;
   }
 
   .contact-us .form {
@@ -7512,6 +7526,16 @@ body.overflow-hidden {
   .about-bvlt .img {
     height: 240px;
   }
+
+  .contact-us-text-2 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .contact-us .form .wrap-btn-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 440px) {
@@ -7530,6 +7554,19 @@ body.overflow-hidden {
 @media (max-width: 360px) {
   .m-menu {
     width: 100%;
+  }
+
+  .contact-us #map .info {
+    font-size: 14px;
+  }
+
+  .contact-us #map .info > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contact-us #map .gm-style .gm-style-iw-c {
+    max-width: 270px !important;
+    padding: 12px !important;
   }
 }
 
@@ -7582,6 +7619,10 @@ body.overflow-hidden {
 
   .blog-item__link {
     margin-top: 29px;
+  }
+
+  .contact-us-text-2 {
+    margin-left: 20px;
   }
 
   .blog-item:first-child {
