@@ -10,6 +10,21 @@ function isWebp() {
     })
 }
 isWebp(), $(function() {
+    if ($('.page-about-us').length || $('.page-our-differences').length) {
+        $('.block .img').each(function () {
+            let h = $(this).height(),
+                w = $(this).width();
+
+            if (w > h) $(this).addClass('horizontal');
+            $(this).addClass('load');
+        })
+    }
+    if ($('.faq').length) {
+        $('.faq__head').click(function () {
+            $(this).parent().toggleClass('active');
+            $(this).next().slideToggle();
+        });
+    }
     if($(".faq").length && $(".faq__head").click(function() {
         $(this).parent().toggleClass("active"), $(this).next().slideToggle()
     }), $(".price-plans").length && $(window).width() < 1200 && $(".price-plans-section__title").click(function() {
