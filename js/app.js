@@ -12,11 +12,16 @@ function isWebp() {
 isWebp(), $(function() {
     if ($('.page-about-us').length || $('.page-our-differences').length) {
         $('.block .img').each(function () {
-            let h = $(this).height(),
-                w = $(this).width();
+            let blockImg = $(this),
+                img = blockImg.find('img');
 
-            if (w > h) $(this).addClass('horizontal');
-            $(this).addClass('load');
+            $('<img>').attr('src', img.attr('src')).on('load', function () {
+                let w = this.width,
+                    h = this.height;
+
+                if (w > h) blockImg.addClass('horizontal');
+                blockImg.addClass('load');
+            })
         })
     }
     if ($('.faq').length) {
