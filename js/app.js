@@ -24,12 +24,6 @@ isWebp(), $(function() {
             })
         })
     }
-    if ($('.faq').length) {
-        $('.faq__head').click(function () {
-            $(this).parent().toggleClass('active');
-            $(this).next().slideToggle();
-        });
-    }
     if($(".faq").length && $(".faq__head").click(function() {
         $(this).parent().toggleClass("active"), $(this).next().slideToggle()
     }), $(".price-plans").length && $(window).width() < 1200 && $(".price-plans-section__title").click(function() {
