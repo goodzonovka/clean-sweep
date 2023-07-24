@@ -152,6 +152,12 @@
             <!-- BUTTON -->
             <a class="button" href="./instant-quote.html">Instant quote</a>
 
+            <a class="button_mob-tel" href="tel:018115853">
+                <svg width="28" height="28">
+                    <use href="./img/icons/icons.svg#phone"></use>
+                </svg>
+            </a>
+
             <button class="m-menu__btn" aria-label="Menu">
                 <svg width="42" height="42">
                     <use href="./img/icons/icons.svg#hamburger"></use>
@@ -175,8 +181,14 @@
                     frustrated, tired and busy FMs to get the best return on their cleaning budget, long term.
                 </div>
                 <div class="buttons">
-                    <a class="button" href="./instant-quote.html">Instant quote</a>
-                    <button class="button button-transparent" data-fancybox data-src="#popup">book a meeting</button>
+                    <div>
+                        <a class="button" href="./instant-quote.html">Instant quote</a>
+                        <div class="text-center buttons__text">generate an online quote in 90 seconds</div>
+                    </div>
+                    <div>
+                        <button class="button button-transparent color-blue" data-fancybox data-src="#popup">book a meeting</button>
+                        <div class="text-center buttons__text">book on-site quote in 30 seconds</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -569,86 +581,126 @@
     <div class="container">
         <div class="subtitle">Testimonials</div>
         <h2 class="section-title">Just some of our happy clients</h2>
-        <div class="reviews__slider swiper">
-            <div class="swiper-wrapper">
-                <div class="item swiper-slide">
-                    <div class="head">
-                        <div class="logo">
-                            <picture><source srcset="img/reviews/logo-1.webp" type="image/webp"><img src="img/reviews/logo-1.png" width="110" height="42" alt=""></picture>
-                        </div>
+        <div class="reviews__slider-wrapper">
+            <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div class="head">
+                            <div class="logo">
+                                <picture><source srcset="img/reviews/logo-1.webp" type="image/webp"><img src="img/reviews/logo-1.png" width="110" height="42" alt=""></picture>
+                            </div>
 
-                        <div class="stars">
-                            <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
+                            <div class="stars">
+                                <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
+                            </div>
+                        </div>
+                        <div class="user-content scrollbar">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="author">
+                            <div class="author__img">
+                                <picture><source srcset="img/reviews/photo-1.webp" type="image/webp"><img src="img/reviews/photo-1.png" width="63" height="63" alt=""></picture>
+                            </div>
+                            <div class="author__info">
+                                <div class="author__name">Adam Smith</div>
+                                <div class="author__speciality">Administrator at Airtable</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="user-content scrollbar">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
-                    </div>
-                    <div class="author">
-                        <div class="author__img">
-                            <picture><source srcset="img/reviews/photo-1.webp" type="image/webp"><img src="img/reviews/photo-1.png" width="63" height="63" alt=""></picture>
+
+                    <div class="item swiper-slide">
+                        <div class="head">
+                            <div class="logo">
+                                <picture><source srcset="img/reviews/logo-2.webp" type="image/webp"><img src="img/reviews/logo-2.png" width="110" height="42" alt=""></picture>
+                            </div>
+
+                            <div class="stars">
+                                <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
+                            </div>
                         </div>
-                        <div class="author__info">
-                            <div class="author__name">Adam Smith</div>
-                            <div class="author__speciality">Administrator at Airtable</div>
+                        <div class="user-content scrollbar">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                        </div>
+                        <div class="author">
+                            <div class="author__img">
+                                <picture><source srcset="img/reviews/photo-2.webp" type="image/webp"><img src="img/reviews/photo-2.png" width="63" height="63" alt=""></picture>
+                            </div>
+                            <div class="author__info">
+                                <div class="author__name">Ilene O’Brien</div>
+                                <div class="author__speciality">CEO & Co-Founder</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item swiper-slide">
+                        <div class="head">
+                            <div class="logo">
+                                <picture><source srcset="img/reviews/logo-3.webp" type="image/webp"><img src="img/reviews/logo-3.png" width="110" height="42" alt=""></picture>
+                            </div>
+
+                            <div class="stars">
+                                <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
+                            </div>
+                        </div>
+                        <div class="user-content scrollbar">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua quis nostrud exercitation ullamco. sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna.</p>
+                        </div>
+                        <div class="author">
+                            <div class="author__img">
+                                <picture><source srcset="img/reviews/photo-3.webp" type="image/webp"><img src="img/reviews/photo-3.png" width="63" height="63" alt=""></picture>
+                            </div>
+                            <div class="author__info">
+                                <div class="author__name">Adam Smith</div>
+                                <div class="author__speciality">Administrator at Airtable</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item swiper-slide">
+                        <div class="head">
+                            <div class="logo">
+                                <picture><source srcset="img/reviews/logo-3.webp" type="image/webp"><img src="img/reviews/logo-3.png" width="110" height="42" alt=""></picture>
+                            </div>
+
+                            <div class="stars">
+                                <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
+                            </div>
+                        </div>
+                        <div class="user-content scrollbar">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua quis nostrud exercitation ullamco. sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna.</p>
+                        </div>
+                        <div class="author">
+                            <div class="author__img">
+                                <picture><source srcset="img/reviews/photo-3.webp" type="image/webp"><img src="img/reviews/photo-3.png" width="63" height="63" alt=""></picture>
+                            </div>
+                            <div class="author__info">
+                                <div class="author__name">Adam Smith</div>
+                                <div class="author__speciality">Administrator at Airtable</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="item swiper-slide">
-                    <div class="head">
-                        <div class="logo">
-                            <picture><source srcset="img/reviews/logo-2.webp" type="image/webp"><img src="img/reviews/logo-2.png" width="110" height="42" alt=""></picture>
-                        </div>
-
-                        <div class="stars">
-                            <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
-                        </div>
-                    </div>
-                    <div class="user-content scrollbar">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
-                    </div>
-                    <div class="author">
-                        <div class="author__img">
-                            <picture><source srcset="img/reviews/photo-2.webp" type="image/webp"><img src="img/reviews/photo-2.png" width="63" height="63" alt=""></picture>
-                        </div>
-                        <div class="author__info">
-                            <div class="author__name">Ilene O’Brien</div>
-                            <div class="author__speciality">CEO & Co-Founder</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item swiper-slide">
-                    <div class="head">
-                        <div class="logo">
-                            <picture><source srcset="img/reviews/logo-3.webp" type="image/webp"><img src="img/reviews/logo-3.png" width="110" height="42" alt=""></picture>
-                        </div>
-
-                        <div class="stars">
-                            <picture><source srcset="img/reviews/stars.webp" type="image/webp"><img src="img/reviews/stars.png" width="120" height="24" alt=""></picture>
-                        </div>
-                    </div>
-                    <div class="user-content scrollbar">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua quis nostrud exercitation ullamco. sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna.</p>
-                    </div>
-                    <div class="author">
-                        <div class="author__img">
-                            <picture><source srcset="img/reviews/photo-3.webp" type="image/webp"><img src="img/reviews/photo-3.png" width="63" height="63" alt=""></picture>
-                        </div>
-                        <div class="author__info">
-                            <div class="author__name">Adam Smith</div>
-                            <div class="author__speciality">Administrator at Airtable</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button swiper-button-prev">
+                <svg width="14" height="14">
+                    <use href="./img/icons/icons.svg#arrow-left"></use>
+                </svg>
+            </div>
+            <div class="swiper-button swiper-button-next">
+                <svg width="14" height="14">
+                    <use href="./img/icons/icons.svg#arrow-right"></use>
+                </svg>
+            </div>
         </div>
 
         <div class="wrap-button">

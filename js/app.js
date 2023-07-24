@@ -108,7 +108,11 @@ isWebp(), $(function() {
             1200: {
                 spaceBetween: 30
             }
-        }
+        },
+        navigation: {
+            nextEl: ".reviews__slider-wrapper .swiper-button-next",
+            prevEl: ".reviews__slider-wrapper .swiper-button-prev"
+        },
     });
     let e = !0,
         t = !1;

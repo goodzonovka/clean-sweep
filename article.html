@@ -11,6 +11,11 @@
     <title>Wireframe connects</title>
 </head>
 <body class="page-grey">
+    <!-- facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v17.0" nonce="YUlM1Cip"></script>
+    <!-- / facebook SDK -->
+
     <div class="wrapper">
 <div class="m-menu-wrap">
     <div class="m-menu__bg"></div>
@@ -187,11 +192,19 @@
                     <picture><source srcset="img/pages/blog/article-1.webp" type="image/webp"><img src="img/pages/blog/article-1.jpg" alt=""></picture>
                 </div>
 
-                <div class="date">
-                    <svg width="20" height="20">
-                        <use href="./img/icons/icons.svg#calendar"></use>
-                    </svg>
-                    12 Nov 2022
+                <div class="article__header">
+                    <a class="article__header__avatar" href="#">
+                        <img class="article__header__avatar__img" srcset="https://picsum.photos/56 1x, https://picsum.photos/112 2x" width="56" height="56" src="https://picsum.photos/56" alt="">
+                    </a>
+                    <div class="article__header__inner">
+                        <div class="date">
+                            <svg width="20" height="20">
+                                <use href="./img/icons/icons.svg#calendar"></use>
+                            </svg>
+                            12 Nov 2022
+                        </div>
+                        <div class="article__header__author">By <a href="#">VINCENT GAIDAU</a></div>
+                    </div>
                 </div>
 
                 <div class="text">
@@ -230,6 +243,53 @@
                             of
                             the Semantics, a large language ocean...</p>
                     </div>
+                </div>
+
+                <div class="like-actions">
+                    <div class="fb-like" data-href="http://www.test.acleansweep.ie/blog/bvlt-pioneering-a-value-driven-approach-in-the-cleaning-industry/" data-width="305" data-layout="" data-action="" data-size="" data-share="false"></div>
+
+                    <a class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=Test">
+                    Tweet</a>
+                </div>
+
+                <hr class="article__hr">
+
+                <div class="article__comments">
+                    <form class="form contact-us-validate">
+
+                        <h2 class="article__comments__title">Leave a comment</h2>
+
+                        <div class="form-group form-group-name">
+                            <label class="form-label form-label_required" for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control"
+                                   placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group form-group-phone">
+                            <label class="form-label form-label_required" for="phone">Phone</label>
+                            <input type="text" id="phone" name="phone" class="form-control"
+                                   placeholder="Enter your phone" required>
+                        </div>
+                        <div class="form-group form-group-company-name">
+                            <label class="form-label" for="company_name">Company Name</label>
+                            <input type="text" id="company_name" name="company_name" class="form-control"
+                                   placeholder="Enter your company name">
+                        </div>
+                        <div class="form-group form-group-email">
+                            <label class="form-label form-label_required" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                   placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group form-group-text">
+                            <label class="form-label" for="text">Message</label>
+                            <textarea class="form-control" id="text" name="text"
+                                      placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <div class="wrap-btn-text" style="margin-top: 48px;">
+                            <button class="button">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -423,6 +483,27 @@
     <button class="button button-to-top hidden" type="button" aria-label="Go to top" data-to-top>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
     </button>
+
+    <!-- Twitter SDK -->
+    <script>
+        window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+    <!-- / Twitter SDK -->
 
     <script src="js/jquery.min.js?_v=20230523172055"></script>
     <script src="js/jquery.validate.min.js?_v=20230523172055"></script>
