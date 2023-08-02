@@ -140,8 +140,8 @@ isWebp(), $(function() {
     if ($('[data-input-hidden]').length > 0) {
 
         function checkValue(value) {
-            // minimum value is 2
-            if (value >= 2) {
+            // minimum value is 0
+            if (value >= 0) {
                 return true;
             } else {
                 return false;
@@ -152,8 +152,14 @@ isWebp(), $(function() {
             var updatedValue = parseInt($(this).parent().parent().find('[data-input-hidden]').val()) - 1;
             var dataInputValue = $(this).parent().find('[data-input-value]');
             if (checkValue(updatedValue) == true) {
-                $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
-                dataInputValue.text(updatedValue);
+                if (updatedValue < 2) {
+                    updatedValue = 0;
+                    $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                    dataInputValue.text(updatedValue);
+                } else {
+                    $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                    dataInputValue.text(updatedValue);
+                }
             }
         });
 
@@ -161,8 +167,15 @@ isWebp(), $(function() {
             var updatedValue = parseInt($(this).parent().parent().find('[data-input-hidden]').val()) + 1;
             var dataInputValue = $(this).parent().find('[data-input-value]');
             if (checkValue(updatedValue) == true) {
-                $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
-                dataInputValue.text(updatedValue);
+                if (updatedValue <= 2) {
+                    updatedValue = parseInt(updatedValue) + 1;
+                    $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                    dataInputValue.text(updatedValue);
+                } else {
+                    $(this).parent().parent().find('[data-input-hidden]').val(updatedValue);
+                    dataInputValue.text(updatedValue);
+                }
+
             }
         })
     };
