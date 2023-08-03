@@ -3254,6 +3254,7 @@ form .button {
   display: block;
   border-left: 3px solid transparent;
   border-radius: 0;
+  text-transform: none;
 }
 
 .header-menu__submenu a:hover {
