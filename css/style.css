@@ -1,5 +1,5 @@
 :root {
-    --img-shadow: 0 8px 24px rgba(0, 0, 0, .15)
+    --img-shadow: 0 8px 24px rgba(0, 0, 0, .35)
 }
 
 *, :after, :before {
@@ -3530,6 +3530,7 @@ body.overflow-hidden {
     align-self: flex-start;
     color: #fff;
     background-color: #2d92d0;
+    box-shadow: var(--img-shadow);
 }
 
 .how-bvlt-can-help .item-blue .title {
@@ -4033,7 +4034,8 @@ body.overflow-hidden {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px
+    border-radius: 16px;
+    box-shadow: var(--img-shadow);
 }
 
 .page .user-content {
