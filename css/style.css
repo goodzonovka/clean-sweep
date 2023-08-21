@@ -7832,7 +7832,8 @@ body.overflow-hidden {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    box-shadow: var(--img-shadow);
 }
 
 .video-btn__play {
