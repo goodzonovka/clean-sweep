@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap&_v=20230523172055" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20230523172055" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230523172055">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Clean Sweap</title>
 </head>
 <body class="main-page">
@@ -72,7 +72,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <div class="header-menu__item">
                             <a href="./services.html">Services</a>
                             <div class="arrow">
@@ -141,7 +141,9 @@
                     </svg>
                     01 811 5853
                 </a>
-                <a href="mailto:info@acleansweep.ie" target="_blank">
+                <a href="mailto:info@acleansweep.ie" target="_blank" onclick="this.href=this.href
+              .replace(/GAV/,'@')
+              .replace(/DDOT/,'.')"> <!-- Защита от спам бота -->
                     <svg width="20" height="20">
                         <use href="./img/icons/icons.svg#mail"></use>
                     </svg>
@@ -186,7 +188,7 @@
                         <div class="text-center buttons__text">generate an online quote in 90 seconds</div>
                     </div>
                     <div>
-                        <button class="button button-transparent color-blue" data-fancybox data-src="#popup">book a meeting</button>
+                        <button class="button blue" data-fancybox data-src="#popup">book a meeting</button>
                         <div class="text-center buttons__text">book on-site quote in 30 seconds</div>
                     </div>
                 </div>
@@ -233,7 +235,7 @@
                             <strong>Not convinced?</strong>
                         </p>
                     </div>
-                    <button class="button" data-fancybox data-src="#popup">Book a meeting</button>
+                    <a class="button" href="./instant-quote.html">Instant quote</a>
                 </div>
 
             </div>
@@ -243,7 +245,7 @@
     <!-- HOW BVLT CAN HELP YOU -->
     <section class="how-bvlt-can-help">
         <div class="container">
-            <h2 class="section-title">How BVLT can help you</h2>
+            <h2 class="section-title">How BVLT Can Help You</h2>
             <div class="inner">
                 <div class="item">
                     <!-- <span class="number">01</span> -->
@@ -308,7 +310,7 @@
     <section class="our-services">
         <div class="container">
             <div class="inner">
-                <h2 class="section-title">Our services</h2>
+                <h2 class="section-title">Our Services</h2>
 
                 <!--TABS-->
                 <div class="tabs">
@@ -580,7 +582,7 @@
     <section class="reviews">
     <div class="container">
         <div class="subtitle">Testimonials</div>
-        <h2 class="section-title">Just some of our happy clients</h2>
+        <h2 class="section-title">What Our Clients are Saying</h2>
         <div class="reviews__slider-wrapper">
             <div class="reviews__slider swiper">
                 <div class="swiper-wrapper">
@@ -714,8 +716,7 @@
         <div class="container">
             <div class="inner">
                 <div class="content">
-                    <h2>BVLT - save time, money,<br>
-                        and headaches in the long run</h2>
+                    <h2 class="section-title">BVLT - Save Time, Money, and Headaches in the Long Run</h2>
                     <div class="user-content">
                         <p>Ever hear of the saying “buy cheap, buy twice”?</p>
                         <p>Well, that’s the idea that inspired our <strong>BVLT System.</strong></p>
@@ -746,7 +747,7 @@
     <!-- CLIENTS -->
     <section class="clients">
         <div class="container">
-            <h2 class="section-title">Clients who know the <span class="text-green">BVLT</span> difference</h2>
+            <h2 class="section-title">Clients who Know the <span class="text-green">BVLT</span> Difference</h2>
 
             <div class="clients__slider-wrap">
                 <div class="clients__slider swiper">
@@ -1131,7 +1132,9 @@
                         </a>
                     </div>
                     <div>
-                        <a href="mailto:info@acleansweep.ie" target="_blank">
+                        <a href="mailto:info@acleansweep.ie" target="_blank" onclick="this.href=this.href
+              .replace(/GAV/,'@')
+              .replace(/DDOT/,'.')"> <!-- Защита от спам бота -->
                             <svg width="20" height="20">
                                 <use href="./img/icons/icons.svg#mail"></use>
                             </svg>

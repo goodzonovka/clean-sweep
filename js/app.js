@@ -11,6 +11,14 @@ function isWebp() {
 }
 isWebp(), $(function() {
     if ($('.page-about-us').length || $('.page-our-differences').length) {
+        $('.block ul').each(function () {
+            let maxHLi = 0;
+            $(this).find('li').each(function () {
+                maxHLi = $(this).height() > maxHLi ? $(this).height() : maxHLi;
+            })
+            $(this).find('li').height(maxHLi);
+        })
+
         $('.block .img').each(function () {
             let blockImg = $(this),
                 img = blockImg.find('img');

@@ -223,7 +223,9 @@
                             <button class="button">Submit</button>
                             <div class="user-content contact-us-text-2">
                                 <p>Or you can call us <a href="tel:018115853">01-8115853</a> or<br> email <a
-                                        href="mailto:info@acleansweep.ie" target="_blank">info@acleansweep.ie</a></p>
+                                        href="mailto:info@acleansweep.ie" target="_blank" onclick="this.href=this.href
+              .replace(/GAV/,'@')
+              .replace(/DDOT/,'.')">info@acleansweep.ie</a></p>
                             </div>
                         </div>
                     </form>
@@ -298,7 +300,9 @@
                             </a>
                         </div>
                         <div>
-                            <a href="mailto:info@acleansweep.ie" target="_blank">
+                            <a href="mailto:info@acleansweep.ie" target="_blank" onclick="this.href=this.href
+              .replace(/GAV/,'@')
+              .replace(/DDOT/,'.')">
                                 <svg width="20" height="20">
                                     <use href="./img/icons/icons.svg#mail"></use>
                                 </svg>
