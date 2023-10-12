@@ -2807,9 +2807,12 @@ ol {
 .user-content ul li {
     display: flex;
     align-items: center;
+}
+
+.user-content ul li span {
     position: relative;
     padding-left: 36px;
-    background: url('../img/icons/icons.svg#check-box') no-repeat left center;
+    background: url('../img/icons/icons.svg#check-box') no-repeat left top;
     background-size: 24px
 }
 
@@ -4617,10 +4620,7 @@ body.overflow-hidden {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: -3px;
     width: 32px;
     height: 32px;
     background: url('../img/icons/icons.svg#check-circle-outline') no-repeat;
