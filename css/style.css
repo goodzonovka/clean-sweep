@@ -7640,6 +7640,9 @@ body.overflow-hidden {
     .clients__slider-wrap .swiper-slide .img {
         padding: 8px;
     }
+    .article__comments {
+        padding: 16px;
+    }
 }
 
 @media (max-width: 568px) {
@@ -7681,6 +7684,11 @@ body.overflow-hidden {
 }
 
 @media (max-width: 369px) {
+    .recaptcha {
+        display: block;
+        transform: scale(.95);
+        transform-origin: left center;
+    }
     .article .date, .article__header__readtime-mobile {
         font-size: 12px;
     }
@@ -7696,7 +7704,7 @@ body.overflow-hidden {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 359px) {
     .m-menu {
         width: 100%
     }
@@ -7713,14 +7721,14 @@ body.overflow-hidden {
         max-width: 270px !important;
         padding: 12px !important
     }
-}
-
-@media (max-width: 359px) {
     .price-plans .row > :first-child .additional-info__content .inner {
         font-size: 13px;
         padding: 8px;
         width: 310px;
         max-width: calc(100vw - 10px)
+    }
+    .captcha {
+        transform: scale(.82);
     }
 }
 
